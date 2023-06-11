@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Roboto Slab', serif;
+  scroll-behavior: smooth;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  background-image:  url(bg2.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  overflow-y:hidden;
+
+  
+}
+.background3{
+  width: 100%;
+  height: 110%;
+  background-image:  url(bg2.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  
+
+  
+}
+.background4{
+  width: 100%;
+  height: 135%;
+
+  background-image: linear-gradient(to right,#d4ac6e,#d9ad7c);
+
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  
+
+  
+}
+
+.backgroundA{
+  width: 100%;
+  height: 100%;
+  background-image: url(BG6.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  overflow-y:hidden;
+  
+  
+}
+.background2{
+  width: 100%;
+  height: 150%;
+  background-image: url(BG6.png);
+  background-position: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+h1 {
+  color: aliceblue;
+  font-size: 100px;
+  margin-top: 25px;
+  text-shadow: 2px 2px rgb(165, 110, 42);
+}
+
+h4 {
+  color: aliceblue;
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: Georgia;
+  font-weight: 100%;
+  text-shadow: 2px 1px rgb(165, 110, 42);
+}
+h3{ color: aliceblue;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: Georgia;
+  font-weight: 90;
+  text-shadow: 1px 1px rgb(165, 110, 42);
+
+}
+h6{
+  color:whitesmoke;
+  text-shadow: 2px 1px  rgb(54, 50, 50);
+  font-family: Georgia;
+  font-size: medium;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+  text-shadow: 1px 1px  rgba(255, 255, 255, 0.648);
+
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.head_container {
+  max-width: 90%;
+  margin: auto;
+}
+
+header {
+  height: 8vh;
+}
+
+.logo img {
+  width: 80px;
+  border-radius: 50px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.hambuger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  margin-left: 50px;
+}
+
+header ul li a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  transition: 0.5s;
+  text-shadow: 1px 0.5px black ;
+}
+
+header ul li a:hover {
+  color: chocolate;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 20;
+  }
+
+  header ul.active {
+    left: 0%;
+  }
+
+  header ul li {
+    margin: 2.5rem 0;
+  }
+
+  header ul li a {
+    color: black;
+  }
+
+  .hambuger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hambuger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hambuger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hambuger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+
+.home .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.home .text {
+  max-width: 50%;
+  color: white;
+  margin: 10% 0 0 5%;
+}
+
+.home h1 {
+    color:rgb(181, 128, 64);
+    font-size: 100px;
+    margin-top: 25px;
+    text-shadow: 2px 2px aliceblue;
+}
+
+.home p {
+  
+    margin-top: 95px;
+    color: rgba(210, 105, 30, 0.803);
+    font-size: 20px;
+    line-height: 20px;
+    font-family:'Times New Roman';    
+    text-shadow: 1px 1px rgba(128, 128, 128, 0.519);
+    
+}
+.home pre {
+
+    margin-top: 10px;
+    color: rgba(210, 105, 30, 0.803);
+    font-size: 18px;
+    line-height: 20px;  
+    font-family:'Times New Roman';
+    
+}
+
+button {
+    margin-top:10px ;
+    width: 200px;
+    color: olive;
+    font-size: 12px;
+    padding: 10px ;
+    background:olive;
+    border:0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+button:hover{
+    transform: translatey(3px);
+
+}
+
+
+
+.home .image_item {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.home .image_item img {
+  width: 140px;
+  height: 94px;
+  margin: 10px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.home .image_item img.active {
+  border: 2px solid white;
+}
+
+.home .box .text {
+  position: relative;
+}
+
+.home .box .text::after {
+  position: absolute;
+  font-size: 500px;
+  top: -120%;
+  font-weight: bold;
+  opacity: 0.1;
+}
+
+
+.flex {
+  display: flex;
+}
+
+
+.top {
+  margin-top: 0%;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about .img {
+  position: relative;
+}
+
+.about .image1 {
+  width: 310px;
+  height: 450px;
+}
+
+.about .image2 {
+  width: 300px;
+  height: 220px;
+  position: absolute;
+  bottom: 5px;
+  z-index: 2;
+  left: 25%;
+}
+
+.heading {
+  position: relative;
+}
+
+
+.heading h5 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  color: #5f5f5f;
+}
+
+.heading h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0 40px 0;
+  color: #222222;
+}
+
+.heading p {
+  margin-bottom: 20px;
+  line-height: 25px;
+  color: #5f5f5f;
+  margin: 0 0 20px 50px;
+}
+
+.heading .btn1 {
+  margin: 50px 0 20px 50px;
+}
+
+
+
+
+
+
+
+.map iframe {
+  width: 100%;
+}
+
+
+.row{
+  display: inline-block;
+  height:88%;
+  align-items: center;
+
+}
+.column{
+  flex-basis: 60%;
+
+}
+
+
+select{
+    margin-top:10px ;
+    width: 200px;
+    color: black;
+    font-size: 12px;
+    padding: 10px ;
+    background:rgb(199, 199, 103);
+    border:0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    
+
+}
+.picture{
+    width:150px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.5s;
+
+}
+.image{
+    width:300px;
+    height:200px;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 8px;
+    background-position: contain;
+    background-size: cover;
+    transition-duration: 0.5s;
+
+}
+
+.pasta1{
+    background-image: url(Ravioli\ with\ Sage\ Brown\ Butter\ Sauce\,\ Spinach\,\ and\ Walnuts\ \(Budget\ Bytes\).jpg);
+
+}
+.pasta2{
+    background-image: url(Dairy\ Free\ Alfredo\ Sauce\ \(No\ Cashews\ or\ Cauliflower!\).png);
+}
+.pasta3{
+    background-image: url(Spinach\ and\ ricotta\ ravioli\ with\ sage\ butter\ recipe.jpg);
+    
+}
+.pasta4{
+    background-image: url(Italian\ Beef\ Ragu\ -\ A\ Classic\ Recipe.png);
+    
+}
+.pastas{
+    background-image: url(Linguine\ allo\ scoglio.jpg);
+
+}
+.pastas2{
+    background-image: url(Tagliatelle\ ai\ funghi.jpg);
+
+}
+.pastas3{
+    background-image: url(Pasta\ alla\ Norcina.jpg      );
+
+}
+.pastas4{
+    background-image: url(Kasspatzln.jpg);
+    
+}
+.pastas5{
+    background-image: url(Vinciscgrassi.jpg);
+    
+}
+.pastas6{
+    background-image: url(Linguine\ all\'astice.jpg);
+    
+}
+.pastas7{
+    background-image: url(Mezzelune.jpg);
+    
+}
+.pastas8{
+    background-image: url(Pasta\ al\ limone.jpg);
+    
+}
+
+
+
+.dessert1{
+    background-image: url(macaroons.jpg);
+
+}
+.dessert2{
+    background-image: url(affogato.jpg);
+    
+}
+.dessert3{
+    background-image: url(chocolatetruffles.jpg);
+    
+}
+.dessert4{
+    background-image: url(Rødgrød\ Med\ Fløde.jpg);
+    
+}
+.desserts1{
+    background-image: url(Soufflé\ au\ chocolat.jpg);
+}
+.desserts2{
+    background-image: url(Crema\ Catalana.jpg);
+}
+.desserts3{
+    background-image: url(Profiteroles\ maison.jpg);
+}
+.desserts4{
+    background-image: url(Panna\ cotta.jpg);
+}
+.desserts5{
+    background-image: url(Baba\ au\ rhum.jpg);
+}
+.desserts6{
+    background-image: url(Tarte\ Tatin.jpg);
+}
+.desserts7{
+    background-image: url(Gelato\ al\ pistacchio.jpg);
+}
+.desserts8{
+    background-image: url(Île\ flottante.jpg);
+}
+.wine1{
+    background-image: url(Luigi\ Bosca.jpg);
+
+}
+.wine2{
+    background-image: url(LE\ MORTELLE.jpg);
+    
+}
+.wine3{
+    background-image: url(Bordeaux.jpg);
+    
+}
+.wine4{
+    background-image: url(MERLOT.jpg);
+    
+}
+.drink1{
+    background-image: url(Sol\ y\ Sombra.jpg);
+    
+
+}
+.drink2{
+    background-image: url(Rebujito.jpg);
+    
+
+}
+.drink3{
+    background-image: url(Campari\ Soda.jpg);
+    
+
+}
+.drink4{
+    background-image: url(Spritz\ Veneziano.jpg);
+    
+
+}
+.drink5{
+    background-image: url(Mimosa.jpg);
+    
+
+}
+.drink6{
+    background-image: url(Kir\ Royale.jpg);
+    
+
+}
+.drink7{
+    background-image: url(French\ 75.jpg);
+    
+
+}
+.drink8{
+    background-image: url(Boulevardier.jpg);
+    
+
+}
+.picture:hover{
+    transform: translateY(-20px);
+    
+}
+.form{
+  margin-top: 20px;
+  padding: 30px;
+  margin-right: 50%;
+  display: inline-flex;
+
+}
+
+input{
+  display: block;
+  border: 2px solid white;
+  width: 160%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+label{
+  color: white;
+  font-size: 18px;
+  font: 1em sans-serif;
+  padding: 10px;
+}
+video{
+  height: 60%;
+  width: 140%;
+  margin-top: 5%;
+  margin-left: 30%;
+  border: 10px whitesmoke;
+  border-radius: 15px;
+  border-color: black;
+  padding: 3px;
+  background-color: rgb(198, 120, 64);
+
+  
+}
+
+
+.popup{
+  width: 400px;
+  background: beige;
+  border-radius:6px;
+  top:0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align:center;
+  padding: 0 30px 30px;
+  color:chocolate;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+
+}
+.popup img{
+  width:100px;
+  margin-top: -50px;
+  border-radius:50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+}.popup h2{
+  font-size:38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  color: chocolate;
+  text-shadow: none;
+
+}.popup p{
+  font-size:10px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  color: grey;
+  text-shadow: none;
+}.popup button{    
+  width:100%;
+  margin-top:50px;
+  padding:10px;
+  background: white;
+  color: chocolate;
+  border-radius: 20px;
+  outline: none;   
+  cursor: pointer;
+  margin-top:10px ;
+  width: 200px;
+  font-size: 12px;
+  transition-duration: 0.5s;
+  opacity: 100%;
+
+}
+
+.pretext{
+  color: black;
+  font-size: large;
+  border: 5px;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -1%;
+  padding: -30px ;
+  
+}
+.pretxt{
+  color: black;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+.pret{
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+  margin-left: 8px;
+}
+
+.tS{
+  color: chocolate;
+  font-size: 100px;
+  margin-top: 25px;
+  text-shadow: 2px 2px rgb(53, 48, 42);
+}
+.button2{
+  margin-top:10px ;
+  width: 200px;
+  color: white 50px;
+  font-size: 12px;
+  padding: 10px ;
+  background:chocolate;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  align-items: flex-start;
+  
+
+}
+.a2{
+  color: aliceblue;
+}
+.button3 {
+  margin-top:10px ;
+  width: 200px;
+  color: olive;
+  font-size: 12px;
+  padding: 10px ;
+  background:white;
+  border:0;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+
+}
+.aa{
+  color: olive;
+}

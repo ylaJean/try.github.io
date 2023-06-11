@@ -1,0 +1,178 @@
+
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Tresor Pates</title>
+  <link rel="icon" type="image/x-icon" href="LOGO.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="website.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="LOGO.png" alt=""> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">View Menu</a> </li>
+          <li> <a href="#about" class="nav-link">About us</a> </li>
+          <li> <a href="#restaurant" class="nav-link">Location</a> </li>
+        </ul>
+        
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>TRÉSOR PÂTES</h1>
+          <pre>I cook with wine, sometimes i even add it to the food. ~W.C. Fields</pre>
+          <p> Reserve a table now.</p>
+          <button> <a href="Reservation.html">Reserve a tableau</a>   </button>
+          <button> <a href="Menu.html">Menu</a>   </button>
+        </div>
+      </div>
+    </div>
+      <div class="image">
+        <img src="Pasta alla Norcina.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="Pasta alla Norcina.jpg" alt="" class="slide active" onclick="img('Pasta alla Norcina.jpg')">
+        <img src="Spritz Veneziano.jpg" alt="" class="slide" onclick="img('Spritz Veneziano.jpg')">
+        <img src="Panna cotta.jpg" alt="" class="slide" onclick="img('Panna cotta.jpg')">
+        <img src="Gelato al pistacchio.jpg" alt="" class="slide" onclick="img('Gelato al pistacchio.jpg')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+ 
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="LE MORTELLE.jpg" alt="" class="image1">
+          <img src="Linguine all'astice.jpg " alt="" class="image2">
+        </div>
+      </div>
+      <div class="column">
+        <h2>We offer the following</h2 >
+        <div class="picture pasta2" >
+          <h5><a href="Pastas.html">
+         Pastas</h5></a>
+         <acronym title= "Varieties of The best Pasta Dishes or you can pick your own combination">Description</acronym></a>
+    </div>
+        <div class="picture dessert1" >
+        <h5> <a href="Desserts.html">    
+       Desserts</h5></a>
+        <acronym title= "Desserts that europeans serve the best">Description</acronym>
+    </div>
+        <div class="picture wine1">
+          <h5> <a href="Wines.html">
+       Drinks</h5></a>
+        <acronym title= "A Alcoholic and Non-Alcoholic cocktails">Description</acronym>
+    </div>
+      <div class="right">
+        <div class="heading">
+          <h5> TRÉSOR PÂTES</h5> 
+          <h2>Bienvenue to TRÉSOR PÂTES</h2>
+          <pre>
+                    
+    Bienvenue to our European pasta restaurant located in the heart of Paris, France! 
+
+We offer a unique dining experience that brings together the rich culinary traditions 
+
+of Italy and other European countries, right here in the city of love.
+                                      
+                                      
+    At our restaurant, we pride ourselves on using only the freshest and finest ingredients 
+
+to create our delicious pasta dishes. Our menu features a variety of classic and innovative 
+
+pasta dishes, inspired by the diverse culinary traditions of Italy, France, Spain, and other
+
+European countries.
+
+
+    To complement our pasta dishes, we offer an extensive selection of wines from some of the 
+    
+best vineyards in Europe. Our knowledgeable staff will be happy to help you choose the perfect
+
+wine to complement your meal and enhance your dining exprience.
+
+                                              
+    Our European pasta restaurant in Paris is designed to create a warm and inviting atmosphere,
+
+where you can enjoy a relaxed and comfortable meal with your loved ones. Whether you're dining 
+
+with friends, family, or a special someone, we provide the perfect setting for any occasion.
+
+
+We take pride in providing exceptional service to our customers and are committed to ensuring 
+
+that every dining experience at our restaurant is a memorable one. So if you're looking for an 
+
+authentic taste of Europe in Paris, come visit us and discover why our European pasta restaurant 
+
+is one of the most beloved dining destinations in the city.
+
+</pre>
+          <button> <a href="Reservation.html" >Reserve a tableau</a>   </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map top" id="restaurant">
+    <pre>
+              Visit us here. .
+    </pre>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d83999.6442213729!2d2.2242268!3d48.8584224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff8a492bf91%3A0x6cd103e409ebbb00!2sLa%20Bulle%20Parisienne!5e0!3m2!1sen!2sph!4v1680773555484!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;"
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+
+</div>
+</body>
+
+</html>
